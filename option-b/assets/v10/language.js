@@ -1,0 +1,1 @@
+(()=>{const switches=[...document.querySelectorAll('.language-switch a')];function update(){switches.forEach(a=>{const url=new URL(a.href);url.hash=location.hash;a.href=url.href})}window.addEventListener('hashchange',update);update();})();
