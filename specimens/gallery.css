@@ -5,3 +5,5 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 @media(min-width:701px){.gallery{min-height:570px}.gesture{bottom:67px}}
 .embed .controls{display:flex;position:absolute;bottom:12px;left:18px;margin:0}.embed .controls .view-mode{display:none}.embed .motion{padding:8px 14px;border-radius:25px;background:#091413d9;color:#d6e0d7}.embed .view-tools{background:#091413d9}.embed .gesture{background:#091413d9;padding:7px 14px;border-radius:25px;color:#d6e0d7;bottom:12px}
+@media(min-width:701px) and (max-height:800px){.detail{display:none}}
+@media(max-width:550px){.embed .gesture{display:none}}
