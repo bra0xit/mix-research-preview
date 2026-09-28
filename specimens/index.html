@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#091413">
+<title>Living specimens — MIX Research</title>
+<meta name="description" content="Tre interaktiva naturskulpturer för MIX Research. Utforska svamp, fisk och ödla i 3D.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="gallery.css?v=1">
+</head>
+<body>
+<header class="masthead"><a href="../index.html" class="brand">MIX <span>Research</span></a><span class="collection" data-i18n="collection">En levande samling</span><div><a href="../vetenskapen.html" id="science-link" data-i18n="science">Till vetenskapen</a><button id="language" aria-label="Switch to English">EN</button></div></header>
+<main>
+<div class="gallery" data-specimen="mushroom">
+<div class="backdrop" aria-hidden="true"></div>
+<section class="introduction" aria-live="polite"><p class="category" id="category">Skogens dolda nätverk</p><h1 id="name">Svampen.</h1><p class="description" id="description">En liten fruktkropp. Ett mycket större liv under marken.</p><div class="detail"><span class="detail-dot"></span><p id="detail">Vrid på svampen och upptäck skivorna under hatten.</p></div></section>
+<section class="viewport" aria-label="Interaktiv 3D-skulptur">
+<div id="stage" tabindex="0" role="group" aria-label="3D-modell. Dra för att rotera, använd piltangenter eller zoomknappar."></div>
+<p id="loading" role="status" data-i18n="loading">Formar naturen…</p>
+<div class="view-tools"><button id="zoom-out" aria-label="Zooma ut">−</button><button id="reset" data-i18n="reset">Återställ</button><button id="zoom-in" aria-label="Zooma in">+</button></div>
+<div class="gesture"><svg viewBox="0 0 36 20" aria-hidden="true"><path d="M8 6C-3 12 6 18 18 18S39 12 28 6M3 7l5-1-1 5M29 11l-1-5 5 1"/></svg><span data-i18n="gesture">Dra för att utforska</span></div>
+</section>
+<aside class="insight"><span class="insight-title" data-i18n="traceTitle">Det synliga är bara början.</span><p id="context">Med DNA från jord kan MIX undersöka svampsamhällen som annars är svåra att upptäcka.</p></aside>
+<div class="controls"><div class="view-mode"><div class="mode-labels"><label for="trace" data-i18n="surface">Yta</label><span data-i18n="dna">DNA-spår</span></div><input id="trace" type="range" min="0" max="100" value="0" aria-label="Övergång mellan yta och schematiska DNA-spår"><p data-i18n="traceHelp">Dra för att se bortom ytan</p></div><button id="motion" class="motion" aria-pressed="false"><span class="motion-icon" aria-hidden="true">Ⅱ</span><span id="motion-label">Pausa rörelsen</span></button></div>
+<nav class="specimen-tabs" aria-label="Välj skulptur"><button data-model="mushroom" aria-pressed="true"><svg viewBox="0 0 80 60" aria-hidden="true"><path d="M16 31C15 10 61 4 65 31Q42 39 16 31M35 35l-2 19h14l-2-19M24 32l13 5M54 32l-12 5"/></svg><span><b data-i18n="mushroom">Svamp</b><small data-i18n="forest">Under marken</small></span></button><button data-model="fish" aria-pressed="false"><svg viewBox="0 0 80 60" aria-hidden="true"><path d="M18 30C33 10 57 14 65 30C53 46 32 49 18 30L7 43V17ZM31 19l10-10 7 9M48 22q-7 8 0 16"/><circle cx="55" cy="28" r="2"/></svg><span><b data-i18n="fish">Fisk</b><small data-i18n="water">Under ytan</small></span></button><button data-model="lizard" aria-pressed="false"><svg viewBox="0 0 80 60" aria-hidden="true"><path d="M7 50Q15 16 43 28Q53 20 68 28L67 35Q53 41 42 34Q19 29 7 50M36 28l-8-12-8 4M49 26l-3-13 10-4M35 34l-8 8 2 10M48 36l9 10 8-2"/></svg><span><b data-i18n="lizard">Ödla</b><small data-i18n="land">Nära marken</small></span></button></nav>
+</div>
+<footer class="footnote"><p data-i18n="note">Konstnärliga naturstudier. DNA-vyn är en illustration, inte provresultat.</p><div><button id="download" data-i18n="download">Spara transparent bild</button><button id="embed" data-i18n="embed">Använd på webbplatsen</button></div></footer>
+<dialog id="embed-dialog"><form method="dialog"><button class="close" aria-label="Close">×</button></form><h2 data-i18n="embedTitle">En skulptur. Valfri sida.</h2><p data-i18n="embedDescription">Bädda in den valda skulpturen. Bakgrunden är transparent och modellen kan fortfarande roteras.</p><textarea id="embed-code" rows="5" readonly aria-label="HTML embed code"></textarea><button id="copy" data-i18n="copy">Kopiera kod</button><p id="copy-status" role="status"></p></dialog>
+</main>
+<noscript><p>Aktivera JavaScript för att utforska 3D-skulpturerna.</p></noscript>
+<script type="module" src="gallery.js?v=1"></script>
+</body></html>
